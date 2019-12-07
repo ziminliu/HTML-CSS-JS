@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 盒子的定位</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+    }
+    
+    .red {
+        background-color: red;
+    }
+    
+    .green {
+        background-color: green;
+    }
+    
+    .static {
+        position: static;
+        /* static 下，设置外偏移量的值无效 */
+        top: 100px;
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .absolute {
+        position: absolute;
+    }
+    
+    .fixed {
+        position: fixed;
+    }
+    
+    .sticky {
+        position: sticky;
+        left: 100px;
+        top: 100px;
+    }
+    
+    .top {
+        top: 100px;
+    }
+    
+    .left {
+        left: 100px;
+        /* top: 100px; */
+    }
+    
+    .bottom {
+        bottom: 100px;
+    }
+    
+    .right {
+        right: 100px;
+    }
+    
+    .style {
+        left: 100px;
+        top: 100px;
+    }
+</style>
+
+<body>
+    <h1>Static</h1>
+    <div class="static red top"></div>
+    <div class="static green left"></div>
+    <h1>Relative</h1>
+    <div class="relative red top"></div>
+    <div class="relative green left"></div>
+    <h1>Absolute</h1>
+    <div>
+        <div class="absolute red  top ">absolute red top</div>
+        <div class="absolute green  left">absolute green left</div>
+    </div>
+    <h1>Fixed</h1>
+    <p>hello hello</p>
+    <p>hello hello</p>
+    <p>hello hello</p>
+    <div class="fixed red left">ad</div>
+    <p>hello hello</p>
+    <p>hello hello</p>
+    <div class="fixed green ">ad</div>
+    <p>hello hello</p>
+    <p>hello hello</p>
+    <h1>Sticky</h1>
+    <div class="sticky green left">search box</div>
+    <div class="sticky green left">search box</div>
+    <div class="sticky green left">search box</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
