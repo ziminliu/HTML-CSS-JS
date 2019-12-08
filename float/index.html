@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float 浮动</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {
+        margin: 10px;
+        padding: 10px;
+        border: 1px black solid;
+        background-color: red;
+    }
+    
+    .father {
+        background-color: #ffff99;
+    }
+    
+    .father1 {
+        background-color: #ffff99;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .box1 {
+        float: left;
+    }
+    
+    .clear {
+        clear: both;
+    }
+</style>
+
+<body>
+    <h1>正常情况</h1>
+    <div class="father">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </div>
+    <h1>第一个盒子浮动</h1>
+    <div class="father">
+        <div class="box1">a</div>
+        <div>b</div>
+        <div>c</div>
+    </div>
+    <h1>多个盒子浮动</h1>
+    <div class="father">
+        <div class="box1">a</div>
+        <div class="box1">b</div>
+        <div>c</div>
+    </div>
+    <h1>三个盒子都浮动</h1>
+    <div class="father">
+        <div class="box1">a</div>
+        <div class="box1">b</div>
+        <div class="box1">c</div>
+    </div>
+    <br>
+    <br>
+    <h1>清除浮动</h1>
+    <div class="father">
+        <div class="box1">a</div>
+        <div class="box1">b</div>
+        <div class="box1 clear">c</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>浮动的浏览器解释问题</h1>
+    <div class="father">
+        <div class="box1">a</div>
+    </div>
+    <h1>浮动的浏览器解释问题设置宽高</h1>
+    <div class="father1">
+        <div class="box1">a</div>
+    </div>
+</body>
+
+</html>
