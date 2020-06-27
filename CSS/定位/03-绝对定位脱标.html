@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .son {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+  }
+
+  .grandfa {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+  }
+
+  .father {
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+  }
+</style>
+
+<body>
+  <div class="grandfa">
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </div>
+</body>
+
+</html>

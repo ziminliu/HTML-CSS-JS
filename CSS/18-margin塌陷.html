@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>嵌套元素margin 塌陷</title>
+</head>
+<body>
+  <style>
+    
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+    .div1{
+      margin: 50px;
+    }
+    .div2{
+      margin: 100px;
+    }
+    .father{
+      width: 400px;
+      height: 400px;
+      background-color: aqua;
+      margin-top: 50px;
+      /* 防止塌陷解决方案1 */
+      /* border: 1px solid transparent; */
+      /* 方案二加上边距 */
+      /* padding: 1px; */
+      /* 方案三 */
+      overflow: hidden;
+    }
+    .son{
+      width: 200px;
+      height: 200px;
+      background-color: burlywood;
+      margin-top: 50px;
+    }
+
+  </style>
+  
+  垂直的margin会取较大值的margin
+  <div class="div1"></div>
+  <div class="div2"></div>
+  <hr>
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+</html>

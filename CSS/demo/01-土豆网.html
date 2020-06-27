@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .box {
+      position: relative;
+      width: 444px;
+      height: 320px;
+      background: pink;
+    }
+
+    .cover {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .3) url(images/arr.png) no-repeat center;
+    }
+
+    /* 注意，不能使用cover 的伪元素，因为默认情况下该元素不显示，已经移除了文档流，所以此处使用box 的伪元素 */
+    .box:hover .cover{
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <div class="box">
+    <div class="cover"></div>
+    <a><img src="https://r1.ykimg.com/050C00005ED1D0F21B6A8D6B120D2242" alt=""></a>
+  </div>
+</body>
+
+</html>

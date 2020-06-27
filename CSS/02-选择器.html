@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择器</title>
+  <style>
+    div>p {
+      color: red
+    }
+
+    /* div 后的紧接着的p 元素 */
+    div+p {
+      color: green;
+      text-decoration: none;
+    }
+
+    a:link {
+      color: red;
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    a:hover {
+      color: blue;
+    }
+    a:active{
+      color: aqua;
+    }
+    input:focus{
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>你好</p>
+  </div>
+  <div>hh</div>
+  <p>哈哈</p>
+  <p>哈哈</p>
+  <p>哈哈</p>
+  <a href="http://www.baidu.com">baidu.com</a>
+  <a href="http://www.ailiyun.com">baidu.com</a><br>
+  <input type="text">
+  <input type="text">
+  <input type="text">
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .pig {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    .people {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+  </style>
+  <div class="pig">pig</div>
+  <div class="people">people</div>
+</body>
+<script>
+  const pig = document.querySelector('.pig');
+  const people = document.querySelector('.people');
+  people.onclick = function () {
+    if (pig.style.display == "none") {
+      return pig.style.display = "block"
+    }
+    pig.style.display = "none"
+  }
+</script>
+
+</html>
