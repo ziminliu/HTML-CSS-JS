@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <video id="mainVideo" src="" muted autoplay ></video>
+  <script>
+    var mainVideo = document.querySelector("#mainVideo")
+    function success(data) {
+      mainVideo.srcObject = data;
+    }
+    function error(data) {
+      alert(data.message);
+    }
+    var settings = { video: true, audio: true }
+    navigator.getUserMedia(settings, success, error)
+  </script>
+</body>
+
+</html>
