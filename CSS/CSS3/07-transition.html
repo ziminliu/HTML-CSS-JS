@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    /* 谁做过渡给谁加 */
+    div{
+      width: 200px;
+      height: 100px;
+      background-color: pink;
+      /* transition 属性 时间 曲线 延迟 */
+      /* transition: width 1s,height 1s ; */
+      transition: all 1s ;
+    }
+    div:hover{
+      width: 500px;
+      height: 300px;
+    }
+  </style>
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .box {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+    }
+
+    .box1 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      background-color: black;
+      /* 不使用 margin top left  当盒子大小改变时，这些数值也需要该变。 */
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <div class="box">
+    <div class="box1"></div>
+  </div>
+</body>
+
+</html>
