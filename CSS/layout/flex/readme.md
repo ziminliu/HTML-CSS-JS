@@ -23,7 +23,7 @@ PC 低版本适配问题
 
 
 
-## 常见父属性
+## 常见flex父元素属性
 
 - flex-direction : 设置主轴的方向
 - justify-content: 设置主轴上的子元素的排列方式
@@ -82,3 +82,38 @@ PC 低版本适配问题
 - space-around 子项平分剩余空间
 - space-between 子项两侧贴边 然后其余项平分
 - stretch 子项元素高度平分父元素高度
+
+
+
+## 子元素属性
+
+- [`flex-grow`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-grow)
+- [`flex-shrink`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-shrink)
+- [`flex-basis`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-basis)
+
+**可用空间** available space
+
+### flex-basis
+
+如果没有给元素设定尺寸，`flex-basis` 的值采用元素内容的尺寸,即width。
+
+
+
+### flex-grow
+
+拥有 flex-grow  属性的子元素，会占有所有的可用空间，如果其他元素也同时拥有这个属性，则可用空间按照这个属性值的比例大小进行分配
+
+
+
+### flex-shrink
+
+flex-shrink属性指定了 flex 元素的收缩规则。flex 元素仅在**默认宽度之和大于容器**的时候才会发生收缩，其收缩的大小是依据 flex-shrink 的值。
+
+默认为 1
+
+当超出容器长度时，按照超出部分计算，类似于flex-grow
+
+### flex属性的简写
+
+`Flex` 简写形式允许你把三个数值按这个顺序书写 — `flex-grow`，`flex-shrink`，`flex-basis`。
+

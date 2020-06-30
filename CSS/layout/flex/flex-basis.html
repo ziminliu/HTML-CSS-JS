@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    div {
+      display: flex;
+      width: 500px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    div span {
+      background-color: green;
+      /* border: 1px solid #000; */
+      flex-basis: 100px;
+      flex-grow: 1
+    }
+
+    div span:first-child {
+      background-color: orange;
+      flex-grow: 2
+    }
+
+    div span:last-child {
+      background-color: skyblue;
+    }
+  </style>
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </div>
+</body>
+
+</html>
